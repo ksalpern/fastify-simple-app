@@ -1,9 +1,4 @@
-import fastify from "fastify";
+import { build } from './app';
 
-const server = fastify();
-
-server.get("/", async () => {
-  return { hello: "world" };
-});
-
+const server = build();
 server.listen({ port: 3000 });
