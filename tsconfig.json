@@ -1,4 +1,8 @@
 {
-  "extends": "fastify-tsconfig",
-  "exclude": ["./node_modules", "types/**/*.test-d.ts"]
-}
+    "extends": "fastify-tsconfig",
+    "compilerOptions": {
+      "outDir": "build",
+      "target": "es2018",
+      "lib": ["es2018"]
+    }
+  }
